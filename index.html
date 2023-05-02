@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyBoard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/master.css">
+
+
+
+
+</head>
+
+<body>
+
+    <main class="container-fluid container-xxl">
+
+        <div class="container-fluid">
+            <div class="row  justify-content-center keyboard">
+                <div id="show" class=" col-11 col-md-9 col-lg-7 d-flex justify-content-center align-items-center">
+                    <div id="txt" class="col-11 justify-content-start row g-0 px-0 mx-0">
+                        <pre id="showText" class="col-12 h-100 bg-dark" contenteditable="true"></pre>
+
+                    </div>
+
+                </div>
+                <div id="keyBoard" class="col-11 col-md-9 col-lg-7 border border-dark my-3">
+                    <div class="row justify-content-center h-100 align-content-around">
+                        <div class="col-10">
+                            <div class="row px-0 mx-0 justify-content-around">
+                                <div data-low="q" data-up="Q"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">q</div>
+                                <div data-low="w" data-up="W"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">w</div>
+                                <div data-low="e" data-up="E"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">e</div>
+                                <div data-low="r" data-up="R"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">r</div>
+                                <div data-low="t" data-up="T"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">t</div>
+                                <div data-low="y" data-up="Y"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">y</div>
+                                <div data-low="u" data-up="U"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">u</div>
+                                <div data-low="i" data-up="I"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">i</div>
+                                <div data-low="o" data-up="O"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">o</div>
+                                <div data-low="p" data-up="P"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">p</div>
+
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="row px-0 mx-0 justify-content-around">
+                                <div data-low="a" data-up="A"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">a</div>
+                                <div data-low="s" data-up="S"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">s</div>
+                                <div data-low="d" data-up="D"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">d</div>
+                                <div data-low="f" data-up="F"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">f</div>
+                                <div data-low="g" data-up="G"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">g</div>
+                                <div data-low="h" data-up="H"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">h</div>
+                                <div data-low="j" data-up="J"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">j</div>
+                                <div data-low="k" data-up="K"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">k</div>
+                                <div data-low="l" data-up="L"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">l</div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="row px-0 mx-0 justify-content-around ">
+                                <div data-data="off" id="upperCase" class="col-1"><i
+                                        class="bi bi-arrow-up-circle-fill  d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                                </div>
+                                <div data-low="z" data-up="Z"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">z</div>
+                                <div data-low="x" data-up="X"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">x</div>
+                                <div data-low="c" data-up="C"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">c</div>
+                                <div data-low="v" data-up="V"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">v</div>
+                                <div data-low="b" data-up="B"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">b</div>
+                                <div data-low="n" data-up="N"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">n</div>
+                                <div data-low="m" data-up="M"
+                                    class="col-1 btn d-flex justify-content-center align-items-center">m</div>
+                                <div id="btnClear" class="col-1 d-flex justify-content-center align-items-center"><i
+                                        class="bi bi-box-arrow-left"></i></div>
+
+                            </div>
+                        </div>
+                        <div class="col-11">
+                            <div class="row px-0 mx-0 justify-content-around">
+                                <div class="col-2 d-flex justify-content-center align-items-center  ">123</div>
+                                <div class="col-1 d-flex justify-content-center align-items-center  "><i
+                                        class="bi bi-emoji-laughing d-flex w-100 h-100 justify-content-center align-items-center"></i>
+                                </div>
+                                <div class="col-1 d-flex justify-content-center align-items-center  "><i
+                                        class="bi bi-mic "></i></div>
+                                <div id="btnSpace" class="col-5 d-flex justify-content-center align-items-center  ">
+                                    spaced</div>
+                                <div id="btnRtrn" class="col-2 d-flex justify-content-center align-items-center  ">
+                                    return</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+<script src="assets/js/master.js"></script>
+
+
+
+</html>

@@ -1,0 +1,70 @@
+:root {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    background: #42403a;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6a675e, #5a574f, rgba(145, 253, 50, 0.4), #42403a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#keyBoard,
+#show {
+    box-shadow: 0px 40px 45px rgba(0, 0, 0, .4);
+    height: 250px;
+    background: #272B2C;
+
+
+}
+
+#show {
+    div {
+        height: 75%;
+        background: #2F3336;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, .7);
+        overflow: hidden;
+
+
+       #showText{
+        text-indent: 15px !important;
+       }
+    }
+
+}
+
+#keyBoard {
+
+    >div>div>div {
+        div {
+            height: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, .7);
+            font-weight: 400 !important;
+            background: #2F3336;
+            color: rgb(145, 253, 50);
+            text-shadow: 0px 0px 40px rgb(145, 253, 50), 0px 0px 80px rgb(145, 253, 50);
+
+            cursor: pointer;
+
+        }
+    }
+}
+
+.anime {
+    animation: carret .4s linear infinite alternate;
+}
+
+.keyboard {
+    margin: 100px auto;
+}
+
+
+@keyframes carret {
+
+    to {
+        opacity: 0;
+    }
+
+}
