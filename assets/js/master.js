@@ -10,97 +10,42 @@ let value = ''
 
 // *****************
 for (i = 0; i < _btn.length; i++) {
-
-    _btn[i].addEventListener('click', function () {
+    _btn[i].onclick = function () {
         _child[0].innerHTML = value + this.innerHTML
         value = value + this.innerHTML
-        _child[0].style.color = '  rgb(145, 253, 50)'
-
-
-
-    })
-
-    _btn[i].addEventListener('mousedown', function () {
-
-        this.style.transform = 'scale(0.9)'
-
-    })
-    _btn[i].addEventListener('mouseup', function () {
-
-        this.style.transform = 'scale(1)'
-
-    })
+    }
 
 }
 
 
 // *******************space
-btnSpace.addEventListener('click', function () {
+btnSpace.onclick = function () {
     _child[0].innerHTML = value + '&nbsp;'
     value = value + ' '
-
-
-
-})
-btnSpace.addEventListener('mousedown', function () {
-
-    this.style.transform = 'scale(0.9)'
-
-})
-btnSpace.addEventListener('mouseup', function () {
-
-    this.style.transform = 'scale(1)'
-
-})
+}
 
 
 
 // *******************clear
-btnClear.addEventListener('click', function () {
-
+btnClear.onclick = function () {
     value = value.substring(0, (value.length) - 1)
     _child[0].innerText = value
-})
-btnClear.addEventListener('mousedown', function () {
-
-    this.style.transform = 'scale(0.9)'
-
-})
-btnClear.addEventListener('mouseup', function () {
-
-    this.style.transform = 'scale(1)'
-
-})
-
+}
 
 // *********************return
-
-
-btnRtrn.addEventListener('click', function () {
+btnRtrn.onclick = function () {
     _child[0].innerHTML = value + '\n'
     value = value + '\n'
-
-
-})
-btnRtrn.addEventListener('mousedown', function () {
-
-    this.style.transform = 'scale(0.9)'
-
-})
-
-
-btnRtrn.addEventListener('mouseup', function () {
-
-    this.style.transform = 'scale(1)'
-
-})
+}
 
 // ************************_upperCase
-_upper.addEventListener('click', function () {
+_upper.onclick = function () {
     if (flag % 2) {
 
         for (i = 0; i < _btn.length; i++) {
             _upperCase = _btn[i].getAttribute('data-up')
+            this.children[0].classList.add('bi-arrow-up-circle-fill')
+            this.children[0].classList.remove('bi-arrow-up-circle')
             _btn[i].innerHTML = ''
             _btn[i].innerText = _upperCase
 
@@ -109,25 +54,14 @@ _upper.addEventListener('click', function () {
 
         for (i = 0; i < _btn.length; i++) {
             _lowerCase = _btn[i].getAttribute('data-low')
+            this.children[0].classList.add('bi-arrow-up-circle')
+            this.children[0].classList.remove('bi-arrow-up-circle-fill')
             _btn[i].innerHTML = ''
             _btn[i].innerText = _lowerCase
         }
     }
 
     flag++
-})
-_upper.addEventListener('mousedown', function () {
-
-    this.style.transform = 'scale(0.9)'
-
-})
-
-
-_upper.addEventListener('mouseup', function () {
-
-    this.style.transform = 'scale(1)'
-
-})
-
+}
 
 
