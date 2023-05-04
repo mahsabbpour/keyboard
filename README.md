@@ -1,4 +1,5 @@
 # keyboard
 
 Page View:
-(./assets/img/index.png)
+
+![Keyboard](./assets/img/index.png)
