@@ -6,6 +6,8 @@ let _upper = document.querySelector('#upperCase')
 let _child = document.querySelector('#txt').children
 let flag = 1
 let value = ''
+let timeoutId
+let intervalId
 
 
 // *****************
@@ -24,12 +26,31 @@ btnSpace.onclick = function () {
     value = value + ' '
 }
 
-
+btnSpace.onmousedown = function () {
+    intervalId = setInterval(() => {
+        _child[0].innerText = value + ' '
+        value = value + ' '
+    }, 300);
+}
+btnSpace.onmouseup = function () {
+    clearInterval(intervalId);
+}
 
 // *******************clear
 btnClear.onclick = function () {
     value = value.substring(0, (value.length) - 1)
     _child[0].innerText = value
+}
+
+btnClear.onmousedown = function () {
+    timeoutId = setTimeout(() => {
+        value = ''
+        _child[0].innerText = value
+    }, 800);
+}
+  
+btnClear.onmouseup = function () {
+    clearTimeout(timeoutId);
 }
 
 // *********************return
